@@ -27,8 +27,8 @@ for region in regions:
                 Resources=ids,
                 Tags=[
                     {
-                        'Key': 'Env',
-                        'Value': 'Production'
+                        'Key': 'Name',
+                        'Value': 'Prod-instance'
                     }
                 ]
             )

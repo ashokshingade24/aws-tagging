@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # insert/update hosts entry
-host_name="${Hostname}"
+host_name="${Host}"
 # find existing instances in the host file and save the line numbers
 matches_in_hosts="$(grep -n $host_name /etc/hosts | cut -f1 -d:)"
 host_entry="${ip_address} ${host_name}"

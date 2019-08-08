@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # insert/update hosts entry
-host_name=${Name}
+host_name=$1
 # find existing instances in the host file and save the line numbers
 matches_in_hosts="$(grep -n $host_name /etc/hosts | cut -f1 -d:)"
-host_entry="${ip_address} ${host_name}"
+host_entry="${host_name}"
 
 echo "Please enter your password if requested."
 

@@ -16,6 +16,6 @@ then
     done <<< "$matches_in_hosts"
 else
     echo "Adding new hosts entry."
-    echo "$host_entry" | sudo tee -a /tmp/hosts > /dev/null
+    echo "$host_entry" | tee -a /tmp/hosts > /dev/null
 fi
 cat /tmp/hosts
